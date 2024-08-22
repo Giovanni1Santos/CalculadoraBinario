@@ -1,0 +1,107 @@
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: #4169e1;
+    width: 380px;
+    height: 550px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem serif;
+    border-bottom: solid 5px #fff;
+    color: #e9eceb;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    border: 1px solid #ddd; /* Borda sutil para definição */
+    outline: none;
+    font: bold 1.2rem Arial, sans-serif; /* Fonte moderna e limpa */
+    text-align: center;
+    padding: 0 10px; /* Adiciona um pouco de preenchimento interno */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna sutil */
+    transition: border-color 0.3s ease; /* Suaviza a transição da cor da borda */
+}
+
+.input input:focus {
+    border-color: #007BFF; /* Cor da borda ao focar */
+}
+
+.input label {
+    font: bold 1.2rem Arial, sans-serif; /* Fonte moderna e limpa */
+    color: #fdfdfd; /* Cor de texto cinza escuro para melhor contraste */
+}
+
+
+  button {
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background:RGB(147, 112, 219); /* Azul vibrante */
+    color: #fff; /* Texto branco para contraste */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Bordas suavemente arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza as transições de cor e movimento */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+button:active {
+    background-color: #004085; /* Azul ainda mais escuro ao clicar */
+    transform: scale(0.98); /* Reduz ligeiramente o tamanho ao clicar */
+}
+
+button:focus {
+    outline: none; /* Remove o contorno de foco padrão */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Adiciona um destaque suave ao focar */
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    width: 300px;
+    height: 150px;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    font: italic 1.5rem Arial, sans-serif; /* Fonte mais moderna e limpa */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave e sutil */
+    background: #f9f9f9; /* Cor de fundo mais clara para um visual clean */
+    color: #333; /* Texto em cinza escuro para melhor contraste e suavidade */
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+    border: 1px solid #ddd; /* Borda sutil para definição do contorno */
+}
